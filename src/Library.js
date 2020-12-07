@@ -21,10 +21,12 @@ function addBook(library, newBook) {
   }
 }
 
-// function checkoutBook(library, book) {
-//   if (library.includes(book))
-// }
+function checkoutBook(library, book) {
+  var updatedShelf = library.pop(book)
+  var checkoutMessage = `You have now checkout out ${book.title} from the ${library.name}`
+}
 
+//oh well, not enough time tonight to figure it out ^^ 
 
 module.exports = {
   createLibrary,
